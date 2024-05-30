@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap'); 
+
+
+#feedback { 
+	background: url("../imgs/feedback.png") no-repeat center center/cover ;
+    padding-top: 15rem;
+	padding-bottom: 10rem;
+	margin: 0; 
+	display: flex; 
+	align-items: center; 
+	justify-content: space-around; 
+	flex-direction: column; 
+	height: 100%; 
+	font-family: 'Poppins', sans-serif; 
+	
+
+} 
+
+#feedback .main_heading-1{
+    padding-bottom: 5rem;
+}
+
+#feedback .textup { 
+	text-align: center; 
+	color: rgb(21, 134, 162); 
+	font-weight: 700; 
+} 
+
+#feedback i { 
+	margin-right: 3px; 
+} 
+
+#feedback .form-box { 
+	background-color: #fff; 
+	box-shadow: 0 0 10px rgb(21, 134, 162);  
+	padding: 15px; 
+	border-radius: 8px; 
+	width: 500px; 
+} 
+
+#feedback form { 
+	max-width: 400px; 
+	margin: 0 auto; 
+} 
+
+#feedback .radio-group { 
+	display: flex; 
+	margin-bottom: 16px; 
+} 
+
+#feedback input[type="radio"] { 
+	margin-right: 8px; 
+} 
+
+#feedback label { 
+	display: block; 
+	margin-bottom: 8px; 
+	font-size: 17px; 
+	color: rgb(21, 134, 162);   
+	font-weight: 600; 
+} 
+
+#feedback input, 
+textarea { 
+	width: 100%; 
+	padding: 8px; 
+	margin-bottom: 12px; 
+	box-sizing: border-box; 
+	border-radius: 10px; 
+
+} 
+
+#feedback button { 
+	background-color:rgb(21, 134, 162); 
+	color: #fff; 
+	padding: 10px; 
+	border: none; 
+	border-radius: 25px; 
+	cursor: pointer; 
+	width: 100%; 
+	font-size: 15px; 
+	transition: .2s linear; 
+} 
+
+#feedback button:hover { 
+	background-color: rgba(21, 134, 162, 0.572);   
+	border: none; 
+	transform: translateY(-10px); 
+} 
+
+#feedback h1 { 
+	color: green; 
+}

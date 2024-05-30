@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <title>Responsive Restaurant Website</title>
+</head>
+<body>
+
+    <!--------------Header start----------------->
+    <header>
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="#"><img src="../Vaishali_res/imgs/logo_t.png" height="65px" width="70 px" alt=""></a>
+                </div>
+                <nav>
+                    <div class="btn">
+                        <i class="fas fa-times close-btn"></i>
+                    </div>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="about.html">AboutUs</a></li>
+                    <li><a href="testimonals.html">Testimonals</a></li>
+                    <li><a href="contact.html">ContactUs</a></li>
+                    <li><a href="feedback.html">Feedback</a></li>
+                </nav>
+                <div class="btn">
+                    <i class="fas fa-bars menu-btn"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--------------Header close----------------->
+
+    <!--------------Showcase start----------------->
+    <main id="showcase">
+        <div class="container">
+            <div class="content">
+                <img src="../Vaishali_res/imgs/logo_t.png " height="100px" width="150px" alt="">
+                <h2>EXPLORE THE STORY OF TRADITION AND SPICE IN EVERY BITE</h2>
+                <h3>Fine Food + Drinks</h3>
+            </div>
+        </div>
+    </main>
+    <!--------------Showcase close----------------->
+
+    <!--------------Cuisines Start(Food lover)----------------->
+
+    <section id="food_lover">
+        <div class="container">
+            <h2 class="main_heading-1">CUISINES</h2>
+                <div class="food_lover_container">
+                    <div class="btn_container">
+                        <button type="button" class="btn-cat active_btn" data-id="Snacks">Snacks</button>
+                        <button type="button" class="btn-cat" data-id="Bhel Puri">Bhel Puri</button>
+                        <button type="button" class="btn-cat" data-id="Sandwiches & Toasts">Sandwiches & Toasts</button>
+                        <button type="button" class="btn-cat" data-id="Pizza">Pizza</button>
+                        <button type="button" class="btn-cat" data-id="Drinks">Drinks</button>
+                        <button type="button" class="btn-cat" data-id="Desserts">Desserts</button>
+                    </div>
+                   <div class="menus_items_container"></div>
+                  
+                </div>
+            <button class="btn-view" id="View_all">View All</button>    
+        </div>
+    </section>
+
+    <!--------------Cuisines close(Food lover)----------------->
+
+
+    <!--------------Reservation Start----------------->
+    <div id="reservation_tbl">
+        <div class="container">
+            <div class="form_data">
+                <h3 class="normal_heading">RESERVE</h3>
+                <h2 class="main_heading">Your Table Now.....</h2>
+                <form action="#">
+                    <input type="text" placeholder="Name">
+                    <input type="text" placeholder="Contact Number">
+                    <input type="email" placeholder="Email Address">
+                    <input type="text" placeholder="No. of Persons">
+                    <input type="date" placeholder="mm/dd/yyyy">
+                    <input type="text" placeholder="Your Time">
+                    <textarea name="" id="" cols="10" rows="10" placeholder="Message Request"></textarea>
+                    <button type="button">Book Now</button>
+                    
+                </form>
+            </div>
+            
+        </div>
+    </div>
+
+    <!--------------Reservation close----------------->
+
+    <!--------------Vaishali's special open(Deal)-----------------> 
+    <div id="deal_today">
+        <div class="container swiper mySwiper">
+
+            <h2 class="main_heading-1">VAISHALI'S SPECIAL</h2>
+            <div class="card_content swiper-wrapper">
+                <div class="cards swiper-slide"> 
+                    <img src="./imgs/spe1 (1).png" alt="">
+                    <h4>Special Masala Dosa</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, voluptatum!</p>
+                    <p class="price">120.00</p>
+                </div>
+
+                <div class="cards swiper-slide"> 
+                    <img src="./imgs/spe1 (2).png" alt="">
+                    <h4>Dahi Idli</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, voluptatum!</p>
+                    <p class="price">70.00</p>
+                </div>
+
+                <div class="cards swiper-slide"> 
+                    <img src="./imgs/spe1 (3).png" alt="">
+                    <h4>Udid Wada</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, voluptatum!</p>
+                    <p class="price">50.00</p>
+                </div>
+
+                <div class="cards swiper-slide"> 
+                    <img src="./imgs/Shev Potato Puri.png" alt="">
+                    <h4>Shev Potato Puri</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, voluptatum!</p>
+                    <p class="price">50.00</p>
+                </div>
+
+                <div class="cards swiper-slide"> 
+                    <img src="./imgs/Upma.png" alt="">
+                    <h4>Upma</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, voluptatum!</p>
+                    <p class="price">30.00</p>
+                </div>
+
+                <div class="cards swiper-slide"> 
+                    <img src="./imgs/Idli Sambar_Chutney.png" alt="">
+                    <h4>Idli Sambar/Chutney</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, voluptatum!</p>
+                    <p class="price">40.00</p>
+                </div>
+
+                <div class="cards swiper-slide"> 
+                    <img src="./imgs/Shev Potato Puri.png" alt="">
+                    <h4>Shev Potato Dahi Puri</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, voluptatum!</p>
+                    <p class="price">60.00</p>
+                </div>
+
+                <div class="cards swiper-slide"> 
+                    <img src="./imgs/Cheese Onion Uttappa (1).png" alt="">
+                    <h4>Cheese Onion Utappa</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, voluptatum!</p>
+                    <p class="price">100.00</p>
+                </div>
+
+                <div class="cards swiper-slide"> 
+                    <img src="./imgs/Sp Bhel Puri.png" alt="">
+                    <h4>Special Bhel</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, voluptatum!</p>
+                    <p class="price">50.00</p>
+                </div>
+
+                <div class="cards swiper-slide"> 
+                    <img src="./imgs/Mysore cheese sada dosa.png" alt="">
+                    <h4>Mysore Cheese Sada Dosa</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, voluptatum!</p>
+                    <p class="price">110.00</p>
+                </div>
+
+                <div class="cards swiper-slide"> 
+                    <img src="./imgs/Cheese Burger.png" alt="">
+                    <h4>Cheese Burger</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, voluptatum!</p>
+                    <p class="price">80.00</p>
+                </div>
+
+                <div class="cards swiper-slide"> 
+                    <img src="./imgs/Tomato Omlette.png" alt="">
+                    <h4>Tomato Omlette</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, voluptatum!</p>
+                    <p class="price">60.00</p>
+                </div>
+
+            </div>
+            <div class="swiper-pagination"></div>
+
+        </div>
+    </div>
+
+    <!--------------Vaishali's special close(Deal)----------------->
+
+
+     <!--------------Customer Reviews start------------------->
+
+     <div id="Rev-sec">
+        <div class="rev-section">
+            <h2 class="main_heading-1">REVIEWS</h2>
+            <div class="reviews">
+                <div class="review">
+                <div class="head-review">
+                    <img src="https://images.unsplash.com/photo-1488161628813-04466f872be2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=80" width="250px">
+                </div>
+                <div class="body-review">
+                    <div class="name-review">Nathan D.</div>
+                    <div class="place-review">Germany</div>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half"></i>
+                    </div>
+                    <div class="desc-review">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati eligendi suscipit illum officia ex eos.</div>
+                </div>
+            </div>
+            <div class="review">
+                <div class="head-review">
+                    <img src="https://images.unsplash.com/photo-1479936343636-73cdc5aae0c3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80" width="250px">
+                </div>
+                <div class="body-review">
+                    <div class="name-review">Mary Will</div>
+                    <div class="place-review">Paris</div>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="desc-review">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati eligendi suscipit illum officia ex eos.</div>
+                </div>
+            </div>
+            <div class="review">
+            <div class="head-review">
+              <img src="https://images.unsplash.com/photo-1463453091185-61582044d556?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" width="250px">
+            </div>
+            <div class="body-review">
+              <div class="name-review">Kevin Tuck</div>
+              <div class="place-review">New York</div>
+              <div class="rating">
+                 <i class="fas fa-star"></i>
+                 <i class="fas fa-star"></i>
+                 <i class="fas fa-star"></i>
+                 <i class="fas fa-star"></i>
+                 <i class="fas fa-star-half"></i>
+              </div>
+            <div class="desc-review">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati eligendi suscipit illum officia ex eos.</div>
+            </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    <!--------------Customer Reviews close----------------->
+
+    <!--------------facilities open----------------->
+
+    <div id="facilities">
+        
+        <div class="container">
+            <div class="content">
+                <h2>FACILITIES & SERVICES</h2>
+                <h3>Your Choice of Atmosphere - Superb Services</h3>
+                <p>High quality food, sparkling clean restaurants, personalized service and hospitality – that is what Vaishali is known for! An atmosphere that is happening, very hygienic and varied – it has it all. Vaishali is famous for its facilities and service.You can be sitting at the covered restaurant, or the wide-open garden restaurant, or even the rooftop restaurant. Surrounded by greenery you can feel the happiness radiate in the wide acres of Vaishali. You can choose a quiet nook or a friendly meeting place. Attentive and a very friendly staff, under the watchful eye of the management, will make sure that you will get exactly what you want - at the best quality.Vaishali is after all the most popular restaurant in town.</p>
+            </div>
+        </div>
+    </div>
+
+
+    <!--------------facilities close---------------->
+
+    <!--------------footer open----------------->
+
+    <section id="footer">
+        <div class="container">
+            <div class="footer_container">
+                <div class="about_us">
+                    <h2><img src="./imgs/logo.png" alt=""></h2>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                      Rem earum tempora beatae eos illum delectus a quasi unde 
+                      fugit. Tempore?
+                    </p>
+                    <a href="#">Read More</a>
+                </div>
+                <div class="opening_hours">
+                    <h2>Opening Hours</h2>
+                    <p class="day">MONDAY: <span>Close</span></p>
+                    <p class="day">TUE-FRI: <span>-------------10.00 AM 10.00 PM</span></p>
+                    <p class="day">SATURDAY: <span>-------------10.00 AM 12.00 PM</span></p>
+                    <p class="day">SUNDAY: <span>-------------10.00 AM 12.00 PM</span></p>
+                </div>
+                <div class="contact_us">
+                    <h2>Contact Us</h2>
+                    <h3>GET IN TOUCH</h3>
+                    <p>020- 25531244 / 184</p>
+                    <p class="add">Add</p>
+                    <p>1218/1, Shivajinagar Fergusson College Road, Pune - 411 004, Maharashtra.</p>
+                    <p class="email">Email</p>
+                    <p>info@vaishalihotel.in</p>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+   
+
+    <footer>
+        <div class="container">
+            <p>
+                Copyright 2023 &copy; Vaishali Restaurant Designed by Sharda Pardeshi</a>
+            </p>
+        </div>
+    </footer>
+
+     <!--------------footer close---------------->
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    
+</body>
+</html>

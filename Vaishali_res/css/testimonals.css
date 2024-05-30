@@ -1,0 +1,46 @@
+#testimonals{
+    background: url('../imgs/testimonals_1.png') no-repeat center center/cover;
+    background-attachment: fixed;
+    padding-top: 15rem;
+    padding-bottom: 10rem
+}
+
+#testimonals .main_heading-1{
+    padding-bottom: 5rem;
+}
+
+#res_img{
+    float: left;
+    margin-right: 10rem;    
+}
+
+#testimonals .res_info{
+    margin-top: 3rem;
+    
+}
+
+
+#testimonals .data{
+    background: #f8f9f884;
+    padding: 4rem;
+    float: right;
+    text-align: center;
+    height: 200px;
+    width: 270px;
+    margin-top: 3rem;
+    margin-right: 7rem;
+}
+
+#testimonals .res_info{
+    clear: both;
+    align-content: center;
+    padding-top: 5rem;
+    padding-right: 7rem;
+}
+
+.btn{
+    font-size: 2.2rem;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+}

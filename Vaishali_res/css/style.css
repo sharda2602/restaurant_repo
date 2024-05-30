@@ -1,0 +1,607 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Righteous&family=Ubuntu+Sans+Mono:ital,wght@0,400..700;1,400..700&display=swap');
+
+:root{
+    --primary_color: #e74c3c;
+    --white_color: #fff;
+
+    --ubuntu: "ubuntu";
+    --righteous: "Righteous";
+
+    --box-shadow: 10px 10px 5px rgba(0,0,0,0.3);
+}
+
+html{
+    font-size: 70%;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "poppins";
+}
+
+/*------------Utility classes start-------------------*/
+
+a{
+    text-decoration: none;
+}
+
+.container{
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 80px;
+}
+
+
+.main_heading{
+    font-size: 1.6rem;
+    font-family: var(--sans);
+    text-align: center;
+}
+
+.main_heading-1{
+    font-size: 4rem;
+    font-family: var(--righteous);
+    text-align: center;
+    color: #2c2b2b;
+}
+
+
+.normal_heading{
+    font-size: 4rem;
+    font-family: var(--righteous);
+    color: var(--white_color);
+    text-align: center; 
+}
+
+.normal_heading-1{
+    font-size: 4rem;
+    font-family: var(--righteous);
+    color: var(--primary_color);
+    text-align: center; 
+}
+
+/*------------Utility classes close-------------------*/
+
+/*------------Header start-------------------*/
+header{
+    width: 100%;
+    background: rgba(0, 0, 0, 0.725);
+    position: fixed;
+    padding: 1.5rem 0;      
+    z-index: 100;            
+}
+
+.logo img{
+    display: block;
+    object-fit: cover;
+    width: 100%;
+    
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar nav{
+    display: flex;
+    align-items: center;
+}
+
+.navbar nav li{
+    list-style-type: none;
+    margin: 0 3rem;
+}
+
+.navbar nav li a{
+    font-weight: bold;
+    font-size: 1.3rem;
+    color: #fff;
+    position: relative;
+}
+
+.navbar nav li a::after{
+    content: "";
+    position: absolute;
+    height: 3px;
+    background: #FF8970;
+    width: 0;
+    left: 0;
+    top: 30px;
+    transition: all 0.5s ease-in-out;
+}
+
+.navbar nav li a:hover::after{
+    width: 100%;
+}
+
+.btn{
+    font-size: 2.2rem;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+}
+
+/*------------Header close-------------------*/
+
+/*------------Showcase start-------------------*/
+#showcase{
+    /*background: url("../imgs/landing.jpg") no-repeat center center/cover;*/
+    background-image: url('../videos/food1.gif');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-blend-mode: screen;
+    background-size: cover;
+    min-height: 100vh;
+    position: relative;
+    z-index: -10;
+}
+
+
+#showcase::before{
+    content: "";
+    background: rgba(0,0,0,0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -11;
+}
+
+#showcase .content{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   min-height: 100vh;
+}
+
+#showcase .content h2{
+    font-size: 4rem;
+    font-family: var(--righteous);
+    color: var(--white_color);
+    text-align: center;
+    letter-spacing: 2px;
+    padding-top: 5rem;
+    padding-bottom: 1rem;
+}
+
+#showcase .content h3{
+    font-size: 2rem;
+    font-family: var(--righteous);
+    color: var(--white_color);
+    text-align: center;
+    letter-spacing: 2px;
+}
+/*------------Showcase close-------------------*/
+
+/*--------------Cuisines Start(Food lover)----------------*/
+
+#food_lover{
+    padding: 10rem 0;
+    background: url(../imgs/cuisine1.jpg) no-repeat center center/cover;
+}
+
+.food_lover_container{
+    margin: 3rem 0;
+}
+
+.food_lover_container .fl-cat{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.btn_container{
+    margin: 4rem 0;
+    width: 100%;
+    display: inline-block;
+    color: #000;
+    text-align: center;
+}
+
+.btn-cat{
+    padding: 0.7rem 1.2rem;
+    cursor: pointer;
+    margin: 0 2rem;
+    border: 1px solid #ddd;
+    font-size: 1.4rem;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-cat:hover,.active_btn{
+    background: #fe9580;
+    color: var(--white_color);
+}
+
+.menus_items_container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-row-gap: 7rem;
+    grid-column-gap: 0.2rem;
+    margin-left: 10rem;
+}
+
+.menus_items_container .img_cards{
+    border: 1px solid #ddd;
+    background: #fff;
+    box-shadow: var(--box-shadow);
+    width: 75%;
+}
+
+.img_cards img{
+    display: block;
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 2rem;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+}
+
+.img_cards img:hover{
+    transform: scale(1.1);
+}
+
+.img_cards p{
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    font-family: var(--sans);
+}
+
+.img_cards .price{
+    color: var(--primary_color);
+    font-size: 1.8rem;
+}
+
+.container .btn-cat2{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.7rem 1.2rem;
+    cursor: pointer;
+    margin: 0 2rem;
+    border: 1px solid #ddd;
+    font-size: 1.4rem;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+
+}
+
+.container .btn-cat2:hover,.active_btn{
+    background: #fe9580;
+    color: var(--white_color);
+}
+
+.btn-view{
+    font-size: 1.4rem;
+    margin-top: 3rem;
+    height: 4rem; 
+    width: 15rem; 
+    border-radius: 5px; 
+    border: 1px solid #ddd;
+    position: relative;
+    left: 45%;
+    right: 55%;
+    
+}
+
+.btn-view:hover,.active_btn{
+    background: #fe9580;
+    color: var(--white_color);
+}
+
+
+
+
+/*--------------Cuisines Close(Food lover)----------------*/
+
+
+/*------------Reservation start -------------------*/
+
+#reservation_tbl{
+    background: url('../imgs/reserve_1.png') no-repeat center center/cover;
+    background-attachment: fixed;
+    padding: 6rem 0;
+    
+}
+
+.form_data{
+    background: #8188815d;
+    padding: 4rem;
+    width: 50%;
+    color: var(--white_color);
+    border-radius: 15px; 
+    margin-left: 250px;  
+    margin-top: 100px;
+}
+
+.form_data form{
+    padding: 4rem 0;
+}
+
+.form_data form input{
+    width: 49.5%;
+    padding: 0.7rem 0.4rem;
+    margin-bottom: 1rem;
+    border: none;
+    border-radius: 6px;
+    transition: all 0.2s ease-in-out;
+}
+
+.form_data form input:hover{
+    background: #c0f9fde2;
+}
+
+.form_data form textarea{
+    width: 100%;
+    padding: 1rem 0.4rem;
+    border-radius: 6px;
+    transition: all 0.2s ease-in-out;
+}
+
+.form_data form textarea:hover{
+    background: #c0f9fde2;
+}
+
+.form_data form button{
+    display: inline-block;
+    width: 100%;
+    border: none;
+    padding: 0.9rem 0;
+    margin-top: 2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.form_data form button:hover{
+    background: #fe9580;
+} 
+
+
+/*------------Reservation close-------------------*/
+
+/*--------------Vaishali's special open(Deal)-----------------*/
+
+#deal_today{
+    padding: 10rem 0;
+    background: url(../imgs/s1.png) no-repeat center center/cover;
+}
+
+#deal_today .card_content{
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+#deal_today .cards{
+    margin: 6rem 0;
+}
+
+#deal_today .card_content h4{
+    font-family: var(--sans);
+    font-size: 2rem;
+}
+
+#deal_today .card_content .price{
+    font-size: 2rem;
+    color: var(--primary_color);
+    font-weight: 600;
+}
+
+/*--------------Vaishali's special close(Deal)-----------------*/
+
+/*--------------Customer Reviews start-----------------*/
+
+/*
+  
+  *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  */
+
+  #Rev-sec{
+    padding: 6rem 0;
+    background: #fff;
+  }
+  
+  .rev-section{
+    margin: auto;
+    padding: 0 1rem;
+    max-width: 1100px;
+    text-align: center;
+  }
+  
+  .note{
+    font-size: 1.1rem;
+    color: rgb(150, 150, 150);
+    font-style: italic;
+    color: red;
+    }
+  
+  .reviews{
+    margin: 2rem auto;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .review{
+    margin: 0 1rem;
+    min-width: 300px;
+    flex: 1;
+  }
+  
+  .head-review{
+    margin: 1.75rem auto;
+    width: 150px;
+    height: 150px;
+  }
+  
+  .head-review img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, .25);
+  }
+  
+  .body-review{
+    background-color: rgb(238, 238, 238);
+    padding: 2.5rem;
+    box-shadow: 2px 2px 10px 3px rgb(225, 225, 225);
+  }
+
+  .name-review{
+    font-size: 1.5rem;
+    color: rgb(50, 50, 50);
+    margin-bottom: .25rem;
+  }
+  .place-review{
+    color: red;
+    font-style: italic;
+  }
+  .rating{
+    color: rgb(253, 180, 42);
+    margin: 1rem 0;
+  }
+  .desc-review{
+    line-height: 1.5rem;
+    letter-spacing: 1px;
+    color: rgb(150, 150, 150);
+  }
+  
+  .title{
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    color: rgb(50, 50, 50);
+    margin-bottom: .5rem;
+  }
+
+/*--------------Customer Reviews start-----------------*/
+
+/*--------------facilities start-----------------*/
+
+#facilities{
+    background: url(../imgs/facilities.png) no-repeat center center/cover;
+    min-height: 55vh;
+    position: relative;
+    z-index: -10;
+}
+
+
+#facilities::before{
+    content: "";
+    background: rgba(0,0,0,0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -11;
+}
+
+
+#facilities .content h2{
+    font-size: 4rem;
+    font-family: var(--righteous);
+    color: var(--white_color);
+    text-align: center;
+    letter-spacing: 2px;
+    padding-top: 8rem;
+    padding-bottom: 1rem;
+}
+
+#facilities .content h3{
+    padding-bottom: 2rem;
+    font-size: 2rem;
+    font-family: var(--sans);
+    color: var(--white_color);
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+#facilities .content p{
+    margin-left: 5rem;
+    margin-right: 5rem;
+    padding-top: 2rem;
+    padding-bottom: 7rem;
+    font-size: 1.5rem;
+    font-family: var(--sans);
+    color: var(--white_color);
+    text-align: center;
+    letter-spacing: 2px;
+}
+/*--------------facilities close-----------------*/
+
+/*--------------footer start-----------------*/
+
+#footer{
+    background: #212121;
+    padding: 4rem 0;
+    color: var(--white_color);
+    font-size: 1.3rem;
+}
+
+.footer_container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 2rem;
+}
+
+.about_us img{
+    display: block;
+    object-fit: cover;
+    width: 50%;
+}
+.about_us p{
+    line-height: 1.8;
+    padding-bottom: 2rem;
+}
+
+.about_us a{
+    color: var(--primary_color);
+}
+
+.footer_container h2{
+    padding-bottom: 3rem;
+    color: var(--primary_color);
+}
+
+.opening_hours{
+    line-height: 1.8;
+}
+
+.opening_hours .day, .email, .add{
+    color: var(--primary_color);
+}
+
+.opening_hours .day span{
+    color: var(--white_color);
+}
+
+footer{
+    background: #171717;
+    text-align: center;
+    padding: 2rem 0;
+    font-size: 1.4rem;
+    color: var(--white_color);
+}
+
+footer a{
+    color: var(--primary_color);
+}
+
+/*--------------fooeter close-----------------*/
+
